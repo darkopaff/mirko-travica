@@ -5,11 +5,12 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  width: 100%;
+  
 }
 
 /* Removing the auto margins */
 body {
+    height: ;
     margin: auto 0;
     display: flex;
     flex-direction: column;
@@ -17,17 +18,17 @@ body {
 
 .zone {
     border: 1px solid #2a651800;
-    cursor: pointer;
+    cursor: auto;
     font-size: 1.3em;
 
 }
       /* Navigation Bar */
 
-.sticky {
+/* .sticky {
     position: fixed;
     top: 0;
     width: 100%;
-}
+} */
 
 .main-nav {
     display: flex;
@@ -35,6 +36,7 @@ body {
     margin: 0;
 }
 
+      /* For mobile phone */
 @media only screen and (max-width: 600px) {
     .main-nav {
         font-size: 0.6em;
@@ -47,9 +49,10 @@ body {
 }
 
 a {
-    color: #26a60c;
+    color: #029b52;
     text-decoration: none;
-    transition: all 0.2s; 
+    transition: all 0.2s;
+    cursor: pointer; 
 }
 
 a:hover {
@@ -78,19 +81,13 @@ li:hover {
 
 #logo {
     width: 20rem;
+    height: 23rem;
+    padding: 0rem 1.3rem;
     border: 1px solid #227608;
     border-radius: 100%;
     background-color: #fffafae6;
 }
 
-#paragraph {
-    color: #2e8217;
-    border: 1px solid #227608;
-    border-radius: 20%;
-    background-color: #ece7e7e0;
-    padding: 0.7rem;
-    display: flex;
-}
 
 
 .nav {
