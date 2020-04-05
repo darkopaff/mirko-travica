@@ -1,0 +1,12 @@
+html, body {
+    top: 0;
+}
+
+.nav {
+    display: flex;
+    color: darkgreen;
+    font-family: 'Gotu', sans-serif;
+}
+li {
+    list-style: none;
+}
