@@ -10,10 +10,10 @@ html {
 
 /* Removing the auto margins */
 body {
-    height: ;
     margin: auto 0;
     display: flex;
     flex-direction: column;
+    font-family: 'Russo One', sans-serif;
 }
 
 .zone {
@@ -29,6 +29,11 @@ body {
     top: 0;
     width: 100%;
 } */
+
+.middle {
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+}
 
 .main-nav {
     display: flex;
@@ -59,12 +64,12 @@ a:hover {
     color: white;
 }
 
-li {
+.lista {
     padding: 5px 25px;
     transition: all 0.3s;
 }
 
-li:hover {
+.lista:hover {
     background-color: rgba(0, 100, 0, 0.616);
     border-radius: 48% 1%;
 }
@@ -92,7 +97,7 @@ li:hover {
 
 .nav {
     color: darkgreen;
-    font-family: 'Gotu', sans-serif;
+    
 }
 
 /* Nav bar */
@@ -103,14 +108,12 @@ li:hover {
 /* Center of the page */
 .middle {
     background-color: #0000001a;
-    font-family: 'Roboto', sans-serif;
     padding: 7rem 2rem 3rem 2rem;
 }
 
 /* Articles */
 .bottom {
     background-color: #00000091;
-    font-family: 'Roboto', sans-serif;
 }
  
 /* Footer */
@@ -125,7 +128,6 @@ footer {
 
 .grey {
     background-color: #e7e8ea6e;
-    font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -142,4 +144,75 @@ footer {
     height: 0;
     align-items: center;
     margin: 0.9rem;
+}
+
+/* *********************************************** */
+/* Gallery */
+
+
+.products-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 3fr));
+    padding: 25px;
+}
+        
+.box > img {
+    width: 100%;
+}
+
+.box {
+    background-color: white;
+    padding: 60px;
+    margin: 20px;
+}
+
+/* **************************************************** */
+    /* Contact */
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ulist {
+    display: grid;
+    grid-template-rows: repeat(auto-fill minmax(350px, 1fr));
+    gap: 20px;
+}
+
+
+
+.icons {
+    display: grid;
+    justify-self: center;
+    height: 100px;
+    width: 100px;
+    border: 1px solid #227608;
+    border-radius: 100%;
+    background-color: #fffafae6;
+}
+
+@media only screen and (max-width: 600px) {
+    .icons {
+        height: 50px;
+        width:50px;
+        padding: 0;
+    }
+}
+
+.icons1 {
+    background-color: #000000b5;
+    list-style-type: none;
+    color: #029b52;
+    font-size: 2rem;
+    justify-self: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .icons1 {
+        font-size: 1.1rem;
+        padding: 0;
+    }
 }
