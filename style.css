@@ -1,12 +1,148 @@
-html, body {
-    top: 0;
+/* Background image and width */
+html { 
+  background: url(img/1.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
 }
 
-.nav {
+/* Removing the auto margins */
+body {
+    margin: auto 0;
     display: flex;
+    flex-direction: column;
+}
+
+.zone {
+    border: 1px solid #2a651800;
+    cursor: pointer;
+    font-size: 1.3em;
+
+}
+      /* Navigation Bar */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.main-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-nav {
+        font-size: 0.6em;
+        padding: 0;
+    }
+}
+
+.push {
+    margin-left: auto;
+}
+
+a {
+    color: #26a60c;
+    text-decoration: none;
+    transition: all 0.2s; 
+}
+
+a:hover {
+    color: white;
+}
+
+li {
+    padding: 5px 25px;
+    transition: all 0.3s;
+}
+
+li:hover {
+    background-color: rgba(0, 100, 0, 0.616);
+    border-radius: 48% 1%;
+}
+
+/* Sadržaj */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 50vh;
+    
+}
+
+#logo {
+    width: 20rem;
+    border: 1px solid #227608;
+    border-radius: 100%;
+    background-color: #fffafae6;
+}
+
+#paragraph {
+    color: #2e8217;
+    border: 1px solid #227608;
+    border-radius: 20%;
+    background-color: #ece7e7e0;
+    padding: 0.7rem;
+    display: flex;
+}
+
+
+.nav {
     color: darkgreen;
     font-family: 'Gotu', sans-serif;
 }
-li {
-    list-style: none;
+
+/* Nav bar */
+.green {
+    background-color: #00000091;
+}
+
+/* Center of the page */
+.middle {
+    background-color: #0000001a;
+    font-family: 'Roboto', sans-serif;
+    padding: 7rem 2rem 3rem 2rem;
+}
+
+/* Articles */
+.bottom {
+    background-color: #00000091;
+    font-family: 'Roboto', sans-serif;
+}
+ 
+/* Footer */
+
+footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: -webkit-fill-available;
+
+}
+
+.grey {
+    background-color: #e7e8ea6e;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.github {
+    padding: 0;
+    width: 1.8rem;
+}
+
+
+#git {
+    display: flex;
+    height: 0;
+    align-items: center;
+    margin: 0.9rem;
 }
